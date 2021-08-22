@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: my_bookshelf_development
+  database: myapp_development
   username: kag
   password: password1
 
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: my_bookshelf_test
+  database: myapp_test
   username: kag
   password: password1
 
@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: my_bookshelf_production
-  username: my_bookshelf
+  database: myapp_production
+  username: myppp
   password: <%= ENV['my_bookshelf_DATABASE_PASSWORD'] %>
